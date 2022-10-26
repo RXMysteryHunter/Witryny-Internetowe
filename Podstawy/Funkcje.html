@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+
+<body>
+    <script>
+        /* Wyglad c++
+
+        typZwracany nazwaFuncji(typ nazwa, typ nazwa)
+        {
+            return wartosc;
+        }
+
+        void Pierwsza()
+        {
+            std::cout<<"Hello World";
+        }
+
+        */
+
+        function ShowInfo()
+        {
+            document.write("Hello\n")
+            document.write("<br/>")
+        }
+        ShowInfo();
+        
+        
+
+        function ShowInfo2(komunikat)
+        {
+            document.write(komunikat);
+            document.write("<br/>");
+        }
+        ShowInfo2("Hello World!")
+    
+    function Suma(liczba1, liczba2)
+    {
+        var wynik= liczba1+liczba2
+        return wynik;
+    }
+    
+    var WynikFunkcji= Suma(15, 20);
+    document.write(WynikFunkcji)
+    document.write("<br/>")
+
+    </script>
+<br/>
+<h3>Sprawdzanie czy liczba jest parzysta lub nie</h3>
+<script>
+    
+   
+    function SprawdzCzyPierwsza(number)
+    {
+    if(number % 2 == 0){
+        document.write("parzysta")
+    }
+    else {
+        document.write("Nieparzysta")
+    }
+    }
+    SprawdzCzyPierwsza(6)
+    
+</script>
+<br/>
+<br/>
+<h3>Czy liczby sa rowne</h3>
+<script>
+
+function ComparingNumbers(number1, number2)
+{
+if (number1==number2){
+    document.write("liczby sa równe <br/>")
+}
+else {
+    document.write("Liczby nie są równe <br/>")
+}
+if (number1===number2){
+    document.write("Liczby sa identyczne")
+}
+ else   {
+    document.write("Liczby nie sa identyczne")
+ }
+
+
+}
+ComparingNumbers(1,1)
+
+</script>
+<h1>Dni tygodnia</h1>
+<script>
+function zadanie3(number)
+{
+switch(number){
+                case 0 Or 7:
+                    document.write("Niedziela")
+                    break;
+                case 1:
+                    document.write("Poniedzialek")
+                    break;
+                case 2:
+                    document.write("Wtorek")
+                    break;
+                case 3:
+                    document.write("Sroda")
+                    break;
+                case 4:
+                    document.write("Czwartek")
+                    break;
+                case 5:
+                    document.write("Piatek")
+                    break;
+                case 6:
+                    document.write("sobota")
+                    break;
+              }
+}
+zadanie3(0)
+
+
+
+
+</script>
+
+</body>
+</html>

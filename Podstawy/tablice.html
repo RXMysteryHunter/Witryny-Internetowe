@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    let TabliczaLiczb = [];
+    TabliczaLiczb[0] = 1;
+    TabliczaLiczb[1] = 7;
+    TabliczaLiczb[2] = 1;
+    TabliczaLiczb[3] = 1212121;
+    TabliczaLiczb[7] = 10;
+
+    for (let i = 0; i <TabliczaLiczb.length; i++)
+        document.write(TabliczaLiczb[i] + "<br/>");
+   
+    function SzukajMaxymalne(paramTab)
+    {
+        let aktMax = paramTab[0];
+        for (let i = 0; i< TabliczaLiczb.length; i++)
+        if (aktMax < paramTab[i])
+            aktMax=paramTab[1]
+        document.write("Najwieksza wartość  " +  aktMax+"<br/>");
+
+
+    }
+    SzukajMaxymalne(TabliczaLiczb)
+    //SzukajMaxymalne(5) tutaj problem. Liczba nie jest tablica
+
+
+
+function WyswietlParametr(p1, p2)
+{
+    document.write(p1+"<br/>");
+    document.write(p2+"<br/>");
+
+    document.write("Wyswietlanie wszystkich paremetrow: <br/>");
+        for (let i=0; i< arguments.length; i++)
+            document.write(arguments[i]+ "<br>")
+}
+WyswietlParametr(1,"Ala")
+WyswietlParametr(1,2,3,4)   
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
