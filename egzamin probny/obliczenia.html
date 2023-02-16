@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+    <head>
+        <title>   
+            Stacja paliw
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Całodobowa stacja paliw</h1>
+        </header>
+        <menu>
+        
+        <a href="stacja.html"><img src="domek.png" alt="" height="80px" weight="80px" href="stacja.html" id="domek"></a>
+        <img src="znak.png" alt="znak" height="80px" weight="10px" href="obliczenia.html" id="znak">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><span>Pobierz dokumenty</span></a>
+        </menu>
+       <div id = "left">
+        <h2>Orientacyjny koszt paliwa:</h2>
+        <h5>Rodzaj paliwa (1-benzyna, 2-olej napędowy):</h5>
+        <input type="text" id="type">
+        <h5>Ile litrów?</h5>
+        <input type="text" id="liters">
+        <br>
+        <button type="button" id="oblicz" onclick="check()">OBLICZ</button>
+        <div id="wynik">&nbsp;</div>
+       </div>
+        <div id ="right">
+            <img src="samochod.png" alt=""class="img1"> 
+        </div>
+
+        
+       <footer>
+        <h3>strone opracował: </h3>
+       </footer>
+
+        <script>
+            function result(price,liters)
+            {
+                let lastPrice = liters*price;
+                document.getElementById("wynik").innerText = lastPrice + "zł";
+            }
+            function check()
+            {
+                let liters = document.getElementById("liters").value;
+                let type = document.getElementById("type").value;
+                let price = 0;
+
+                if(type == 1)
+                    price = 4;
+                if(type == 2)
+                    price =3.5;
+                result(price,liters);
+            }
+        </script>
+    </body>
+</html>
