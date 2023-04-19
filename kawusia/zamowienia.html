@@ -49,8 +49,6 @@
 
     let cena = 0;
 
-    x = "zł";
-
     if (number == 1) {
         cena = waga * 5;
     } else if (number == 2) {
@@ -62,7 +60,7 @@
     } else {
         cena = 0;
     }
-    document.getElementById("wynik").innerHTML = `Koszt zamówienia wynosi: ${cena} ${x}`;
+    document.getElementById("wynik").innerHTML = `Koszt zamówienia wynosi: ${cena} zł`;
 }
   </script>
 
