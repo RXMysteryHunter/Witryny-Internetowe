@@ -1,0 +1,59 @@
+section{
+    display: flex;
+    clear: both;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+#banner,#footer
+{
+    background-color: rgb(70,130,180);
+    height: 30px;
+    text-align: center;
+}
+
+#main
+{
+    background-color: rgb(176,196,222);
+    padding: 50px;
+    text-align: center;
+}
+
+#left
+{
+    background-color: rgb(70,130,180);
+    color: white;
+    height: 300px;
+    width: 80%;
+}
+
+#right
+{
+    background-color: rgb(70,130,180);
+    color: white;
+    height: 300px;
+    width: 20%;
+}
+
+#img1
+{
+    padding: 3px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color:blue ;
+    border-radius: 10px;
+}
+
+.image1
+{
+    height: 40%;
+}
+
+.image1:hover
+{
+    border-style: solid;
+    border-color: white;
+    border-width:1px;
+}
