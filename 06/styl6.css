@@ -1,0 +1,66 @@
+section
+{
+    display: flex;
+}
+
+#right2
+{
+    display: flex;
+    flex-direction: reverse;
+}
+
+#right
+{
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+}
+
+#left
+{
+    float: left;
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+}
+
+#body
+{
+    font-family: Georgia;
+
+}
+
+#footer
+{
+    color:white;
+    background-color: dimgray;
+}
+
+p{
+    padding: 10px;
+}
+
+img{
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+#olive
+{
+    background-color: olive;
+}
+
+#steelBlue
+{
+    background-color: steelblue;
+}
+
+#indigo
+{
+    background-color: indigo;
+}
