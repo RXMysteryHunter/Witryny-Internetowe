@@ -7,7 +7,7 @@ body{
     font-family: Helvetica;
 }
 
-#banner,#footer
+#banner,#stopka
 {
     background-color: rgb(70,130,180);
     height: 30px;
@@ -21,7 +21,7 @@ body{
     text-align: center;
 }
 
-#left
+#lewy
 {
     background-color: rgb(70,130,180);
     color: white;
@@ -29,7 +29,7 @@ body{
     width: 80%;
 }
 
-#right
+#prawy
 {
     background-color: rgb(70,130,180);
     color: white;

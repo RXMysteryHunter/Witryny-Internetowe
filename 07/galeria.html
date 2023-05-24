@@ -16,7 +16,7 @@
         </div>
 
         <section>
-            <div id="left">
+            <div id="lewy">
                 <h3>Przeglądaj zdjęcia</h3>
                 <img src="lanzarotte.jpg" alt="lanzarotte" class="image1" onclick="onClick1(1)">
                 <img src="pekin.jpg" alt="pekin"  class="image1" onclick="onClick1(2)">
@@ -25,7 +25,7 @@
                 <img src="tajlandia.jpg"alt="tajlandia"  class="image1" onclick="onClick1(5)">
             </div>
 
-            <div id="right">
+            <div id="prawy">
                 <h3>Obrazy naszej galerii</h3>
                 <table>
                     <tr>
@@ -44,45 +44,47 @@
             </div>
         </section>
 
-        <div id="footer">
+        <div id="stopka">
             <p>Autor: Maks Frelik</p>
         </div>
 
         <script>
-            function onClick1(number)
-            {
-                let photoToChange = document.getElementById("img1");
-                if(number == 1)
-                    photoToChange.src ="lanzarotte.jpg";
-                else if(number == 2)
-                    photoToChange.src ="pekin.jpg";
-                else if(number == 3)
-                    photoToChange.src ="serengeti.jpg";
-                else if(number == 4)
-                    photoToChange.src ="wenecja.jpg";
-                else if(number == 5)
-                    photoToChange.src ="tajlandia.jpg";
-            }
-            let photoToChange = 0;
 
             function onClick2()
             {
-                let photo = document.getElementById("img2");
+                let icon = document.getElementById("img2");
 
-                photoToChange++;
-                if ( photoToChange > 1)
+                ChangePhoto++;
+                if ( ChangePhoto > 1)
                 {
-                    photoToChange = 0;
+                    ChangePhoto = 0;
                 }
-                if ( photoToChange == 1)
+                if ( ChangePhoto == 1)
                 {
-                    photo.src = "icon-on.png";
+                    icon.src = "icon-on.png";
                 }
                 else
                 {
-                    photo.src = "icon-off.png";
+                    icon.src = "icon-off.png";
                 }
             }
+
+            function onClick1(number)
+            {
+                let ChangePhoto = document.getElementById("img1");
+                if(number == 1)
+                    ChangePhoto.src ="lanzarotte.jpg";
+                else if(number == 2)
+                    ChangePhoto.src ="pekin.jpg";
+                else if(number == 3)
+                    ChangePhoto.src ="serengeti.jpg";
+                else if(number == 4)
+                    ChangePhoto.src ="wenecja.jpg";
+                else if(number == 5)
+                    ChangePhoto.src ="tajlandia.jpg";
+            }
+            let ChangePhoto = 0;
+            
         </script>
 
     </body>
