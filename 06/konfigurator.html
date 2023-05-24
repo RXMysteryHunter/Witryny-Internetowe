@@ -8,7 +8,7 @@
 
 <body>
     <section>
-        <div id="left">
+        <div id="lewy">
             <h1>Konfigurator stylu</h1> <br>
             <p>Podaj kolor tła</p>
             
@@ -35,9 +35,9 @@
             <input type="radio" onclick="Lista(1)" checked  value="1"> dysk<br>
             <input type="radio" onclick="Lista(2)" value="2"> kwadrat<br>
             <input type="radio"onchange="Lista(3)" value="3"> okrąg
-        +
+            
         </div>
-        <div id="right">
+        <div id="prawy">
             <section class="right2">
                 <img src="gibraltar.jpg" alt="półwysep Gibraltar" id="img">
                 <ul id="list1">
@@ -54,32 +54,6 @@
     </div>
 
     <script>
-        function ind()
-        {
-            document.getElementById("right").style.backgroundColor = "indigo";
-        }
-        
-        function ste()
-        {
-            document.getElementById("right").style.backgroundColor = "steelblue";
-        }
-        
-        function oli()
-        {
-            document.getElementById("right").style.backgroundColor = "olive";
-        }
-        
-        function KolorCzcionki()
-        {
-            let color = document.getElementById("color").value;
-            document.getElementById("right").style.color = color;
-        }
-        
-        function Rozmiar()
-        {
-            let size = document.getElementById("fontSize").value;
-            document.getElementById("right").style.fontSize = size;
-        }
         
         function ramka()
         {
@@ -87,6 +61,18 @@
                 document.getElementById("img").style.border = "1px solid white";
             else 
                 document.getElementById("img").style.border = "none";
+        }
+
+        function KolorCzcionki()
+        {
+            let color = document.getElementById("color").value;
+            document.getElementById("prawy").style.color = color;
+        }
+        
+        function Rozmiar()
+        {
+            let size = document.getElementById("fontSize").value;
+            document.getElementById("prawy").style.fontSize = size;
         }
         
         function Lista(value)
@@ -98,6 +84,22 @@
             if(value == 3)
                 document.getElementById("list1").style.listStyle = "circle";
         }
+
+        function ind()
+        {
+            document.getElementById("prawy").style.backgroundColor = "indigo";
+        }
+        
+        function ste()
+        {
+            document.getElementById("prawy").style.backgroundColor = "steelblue";
+        }
+         
+        function oli()
+        {
+            document.getElementById("prawy").style.backgroundColor = "olive";
+        }
+
     </script>
 </body>
 </html> 
